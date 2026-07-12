@@ -456,7 +456,7 @@ footer{background:var(--bg-inverse); color:var(--text-inverse-soft); padding:44p
   <div class="wrap contact-inner">
     <div class="contact-form reveal">
       <h3 class="serif" style="font-size:1.4rem; margin-bottom:22px;">Tell us about your project</h3>
-      <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <form id="contact-form" action="https://formspree.io/f/mlgqrwjl" method="POST">
         <div class="form-row"><label for="name">Name</label><input type="text" id="name" name="name" placeholder="Jane Smith" required></div>
         <div class="form-row"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="jane@company.com" required></div>
         <div class="form-row">
@@ -558,7 +558,9 @@ footer{background:var(--bg-inverse); color:var(--text-inverse-soft); padding:44p
   window.__setTheme = setTheme;
 })();
 
-// Contact form submission (Formspree — replace YOUR_FORM_ID in the form action with your real form ID)
+// Contact form submission (Formspree — notification email currently goes to the Gmail
+// account used to sign up; switch it to contact@labcookie.com in Formspree's dashboard
+// once that mailbox exists, no code change needed)
 (function(){
   const form = document.getElementById('contact-form');
   if(!form) return;
